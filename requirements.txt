@@ -1,0 +1,6 @@
+fitz
+Pillow
+transformers
+torch
+gradio
+requests
