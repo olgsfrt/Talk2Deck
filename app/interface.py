@@ -10,8 +10,8 @@ def process_pdf_and_generate_response(pdf_file):
 
 iface = gr.Interface(
     fn=process_pdf_and_generate_response,
-    inputs=gr.inputs.File(type="pdf"),
-    outputs="text",
+    inputs=gr.components.File(label="Upload PDF", file_types=["pdf"]),
+    outputs=gr.components.Textbox(),
     title="Talk2Deck - Interact with your PDFs",
-    description="Upload a PDF and receive insights based on its content.",
+    description="Upload a PDF and receive insights based on its content."
 )
